@@ -6,7 +6,9 @@ Squawker checks for new TFR's every 10 minutes and sends an MMS message with the
 
 
 To create a new alert request you make an HTTP **POST** request to the list resource url,
-~~~/Accounts/{Account SID}/AlertRequests
+~~~
+/Accounts/{Account SID}/AlertRequests
+~~~
 
 #### Example: Register the number 555-867-5309 to receive an alert if a TFR pops up within a 200 nm radius of Montgomery Field
 
@@ -16,19 +18,19 @@ To create a new alert request you make an HTTP **POST** request to the list reso
 
 ## Required Parameters
 
-| Parameter    | Description                                   | Example |   |   |
-|--------------|-----------------------------------------------|---------|---|---|
-| origin       | ICAO identifier of a US airport               | KMYF    |   |   |
-| phone_number | Ten digigit US phone number in the format of xxxxxxxxxx |         |   |   |
-|              |                                               |         |   |   |
+| Parameter    | Description                                   | Example |
+|--------------|:---------------------------------------------:|:-------:|
+| origin       | ICAO identifier of a US airport               | KMYF    |
+| phone_number | Ten digigit US phone number in the format of xxxxxxxxxx |
+|              |                                               |         |
 
 ## Optional Parameters
 
-| Parameter    | Description                                   | Example | Default  |   |
-|--------------|-----------------------------------------------|---------|---|---|
-| destination       | ICAO identifier of a US airport               | KOAK    |   |   |
-| radius | Radius in NM from specified origin, destination, or cross-track distance from the flight path |    100     |  200 |   |
-|              |                                               |         |   |   |
+| Parameter    | Description                                   | Example | Default  |
+|--------------|:---------------------------------------------:|:-------:|:--------:|
+| destination  | ICAO identifier of a US airport               | KOAK    |          |
+| radius       | Radius in NM from specified origin, destination, or cross-track distance from the flight path |    100     |  200 |
+
 
 
 
