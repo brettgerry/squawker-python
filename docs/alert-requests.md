@@ -1,4 +1,4 @@
-# AlertRequests
+# Alert Requests
 
 You can create TFR Alert Requests to register a phone number to receive text and picture messages (SMS and MMS) when restricted airspace pops up near a certain airport. Optionally, you can specify a radius and/or destination and alerts will be sent if the restricted airsapce is within a certain range along that path.
 
@@ -10,19 +10,40 @@ To create a new alert request you make an HTTP **POST** request to the list reso
 /Accounts/{Account SID}/AlertRequests
 ~~~
 
-#### Example: Register the number 555-867-5309 to receive an alert if a TFR pops up within a 200 nm radius of Montgomery Field
+#### Example
 
-    curl -XPOST -u "username:password" https://api.squawker.io/Accounts/ACC1234567/AlertRequests /
-        -d "origin=KMYF"
+Register the number 555-867-5309 to receive an alert if a TFR pops up within a 200 nm radius of Montgomery Field
+
+    curl -XPOST -u "{username}:{password}" \
+        https://api.squawker.io/Accounts/{AccountSID}/AlertRequests \
+        -d "origin=KMYF" \
         -d "phone_number=4155551212"
 
 ## Required Parameters
 
-| Parameter    | Description                                   | Example |
+<!-- | Parameter    | Description                                   | Example |
 |--------------|:---------------------------------------------:|:-------:|
 | origin       | ICAO identifier of a US airport               | KMYF    |
 | phone_number | Ten digigit US phone number in the format of xxxxxxxxxx |
-|              |                                               |         |
+|              |                                               |         | -->
+
+<table>
+  <tr>
+    <th>Parameter</th>
+    <th>Description</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td>origin</td>
+    <td>ICAO identifier of a US airport</td>
+    <td>KMYF</td>
+  </tr>
+  <tr>
+    <td>phone_number</td>
+    <td>US phone number in the format of xxx-xxx-xxxx</td>
+    <td></td>
+  </tr>
+</table>
 
 ## Optional Parameters
 
