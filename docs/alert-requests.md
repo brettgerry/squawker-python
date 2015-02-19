@@ -6,9 +6,9 @@ Squawker checks for new TFR's every 10 minutes and sends an MMS message with the
 
 
 To create a new alert request you make an HTTP **POST** request to the list resource url,
-~~~
+```
 /Accounts/{Account SID}/AlertRequests
-~~~
+```
 
 #### Example
 
