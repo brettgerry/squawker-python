@@ -1,6 +1,6 @@
 # Alert Requests
 
-You can create TFR Alert Requests to register a phone number to receive text and picture messages (SMS and MMS) when restricted airspace pops up near a certain airport. Optionally, you can specify a radius and/or destination and alerts will be sent if the restricted airsapce is within a certain range along that path.
+You can create TFR Alert Requests to register a phone number to receive text and picture messages (SMS and MMS) when restricted airspace pops up near a certain airport. You can also specify a radius and/or destination and alerts will be sent if the restricted airsapce is within a certain range along that path.
 
 Squawker checks for new TFR's every 10 minutes and sends an MMS message with the type of TFR, a link to the FAA description of the TFR, and an image of the diagram on a VFR sectional map.
 
