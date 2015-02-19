@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="./img/favicon.ico">
+
+        <title>Squawker.io</title>
+
+        <link href="./css/bootstrap-3.0.3.min.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="./css/prettify-1.0.css" rel="stylesheet">
+        <link href="./css/base.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!-- Main title -->
+            <a class="navbar-brand" href=".">Squawker.io</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            <!-- Main navigation -->
+            <ul class="nav navbar-nav">
+            
+            
+                <li >
+                    <a href="alert-requests/">Alert requests</a>
+                </li>
+            
+            
+            </ul>
+
+            <!-- Search, Navigation and Repo links -->
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li class="disabled">
+                    <a rel="next" >
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </li>
+                <li >
+                    <a rel="prev" href="alert-requests/">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#squawker-rest-api">Squawker REST API</a></li>
+        
+            <li><a href="#api-resources">API Resources</a></li>
+        
+            <li><a href="#client-libraries">Client Libraries</a></li>
+        
+            <li><a href="#using-the-rest-api">Using the REST API</a></li>
+        
+    
+    </ul>
+</div></div>
+            <div class="col-md-9" role="main">
+
+<h1 id="squawker-rest-api">Squawker REST API</h1>
+<p>The Squawker <a href="http://rest.elkstein.org/" title="Learn REST">REST API</a> allows you to get and interact aviation data
+including TFRs, Pireps, Notams. You can also create alerts that send
+notifications to your users, such as sending an SMS message when a TFR pops up
+near an airport.</p>
+<p>Because the API is based on <a href="http://rest.elkstein.org/" title="Learn REST">REST Principles</a>, it is very easy to write
+applications in the language of your choice using most any HTTP client. By
+usng Squawker, you can concentrate on building your aviation app instead of
+spending time aggregating and translating data from all the different sources
+out there. We have done the heavy lifting for you.</p>
+<h2 id="api-resources">API Resources</h2>
+<h3 id="alerts-and-notifications">Alerts and Notifications</h3>
+<ul>
+<li><a href="./alert-requests">TFR Alert Requests</a></li>
+</ul>
+<h3 id="flight-data">Flight Data</h3>
+<ul>
+<li><strong>TFRs</strong> Coming soon!</li>
+<li><strong>Notams</strong> Coming soon!</li>
+<li><strong>Pireps</strong> Coming soon!</li>
+</ul>
+<h2 id="client-libraries">Client Libraries</h2>
+<p>To make it easy, we have created some open source libraries that interact with
+the Squawker REST API in several programming languages. If the language you use
+is not listed, you can use your own HTTP client library that is common for that
+language to make requests to the API resources using the proper paramters.</p>
+<h3 id="python">Python</h3>
+<ul>
+<li><a href="https://github.com/brettgerry/squawker-python" title="Squawker Python client">squawker-python</a></li>
+</ul>
+<h3 id="java">Java</h3>
+<ul>
+<li><strong>squawker-java</strong> coming soon!</li>
+</ul>
+<h2 id="using-the-rest-api">Using the REST API</h2>
+<h3 id="api-http-requests">API HTTP Requests</h3>
+<p>Requests to the Squawker API require <a href="http://en.wikipedia.org/wiki/Basic_access_authentication">HTTP Basic Authentication</a>.</p>
+<h3 id="api-http-response-formats">API HTTP Response Formats</h3>
+<p>Squawker responds to HTTP requests in the <a href="http://www.w3schools.com/json/">JSON</a> format.</p>
+</div>
+        </div>
+
+        
+
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="./js/bootstrap-3.0.3.min.js"></script>
+        <script src="./js/prettify-1.0.min.js"></script>
+        <script src="./js/base.js"></script>
+    </body>
+</html>
